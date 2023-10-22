@@ -7,12 +7,15 @@ def updation(list1,N,K):
 print(updation(list1, N, K))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+3. Add lists and sort
 
-
-
-
-
-
+def addition(list1,list2):
+    list1.extend(list2)
+    return sorted(list1)
+print(addition(list1, list2))
+---------------------------------------------------------------
 
 
 
