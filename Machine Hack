@@ -1,0 +1,19 @@
+---------------------------------------------------------------
+Beginner
+1. Updation of list items
+
+def updation(list1,N,K):
+    return list1[:K] + [N] + list1[K:]
+print(updation(list1, N, K))
+---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
