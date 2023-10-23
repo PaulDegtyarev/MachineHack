@@ -17,6 +17,29 @@ def addition(list1,list2):
 print(addition(list1, list2))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+5. Second largest element in the list
+
+def removingDuplicate(list1):
+    list1 = sorted(set(list1))
+    return list1[-2]
+print(removingDuplicate(list1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+6. All the positive numbers
+
+def positiveNumber(K,N):
+    list = []
+    for i in range(K, N+1):
+        if i > 0:
+            list.append(i)
+    return list
+print(positiveNumber(K,N))
+---------------------------------------------------------------
+
 
 
 
