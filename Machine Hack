@@ -40,6 +40,12 @@ def positiveNumber(K,N):
 print(positiveNumber(K,N))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+10. Simple interest
 
-
+def simpleInterest(P,R,T):
+    return (P * R * T)/100
+print(simpleInterest(P, R, T))
+---------------------------------------------------------------
 
