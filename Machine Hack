@@ -104,11 +104,22 @@ def sum(array1,array2):
 print(sum(array1,array2))
 ---------------------------------------------------------------
 
-
+---------------------------------------------------------------
 Beginner
 20. Sort an array in descending order
 
+def decending_order(array):
+    return sorted(array, reverse=True)
+print(decending_order(array1))
+---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+21. Length of a dictionary
 
+def lengthOfDictionary(dict1):
+    return len(dict1)
+print(lengthOfDictionary(dict1))
+---------------------------------------------------------------
 
 
