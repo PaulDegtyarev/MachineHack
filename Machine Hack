@@ -49,3 +49,66 @@ def simpleInterest(P,R,T):
 print(simpleInterest(P, R, T))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+11. String concatenation
+
+def concatenate(string1,string2,string3):
+    s = string1 + ' ' + string2 + ' ' + string3
+    size = len(s)
+    result = []
+    result.append(s)
+    result.append(size)
+    return result
+print(concatenate(s1,s2,s3))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+16. Reverse an array
+
+def ReverseArray(array):
+    return array[::-1]
+print(ReverseArray(array1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+17. Add elements to the array
+
+def add_a_element(array,K,N):
+    return array[:K] + [N] + array[K:]
+print(add_a_element(array1,K,N))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+18. Pop array elements
+
+def add_a_element(array,K):
+    del array[K]
+    return array
+print(add_a_element(array1,K))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+19. Concatenate arrays
+
+def sum(array1,array2):
+    array = array1 + array2
+    s = 0
+    for i in range(len(array)):
+            s += array[i]
+    return s
+print(sum(array1,array2))
+---------------------------------------------------------------
+
+
+Beginner
+20. Sort an array in descending order
+
+
+
+
+
