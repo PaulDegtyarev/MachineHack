@@ -122,4 +122,30 @@ def lengthOfDictionary(dict1):
 print(lengthOfDictionary(dict1))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+22. Merge dictionaries
+
+# Для Python до 3.9
+def mergeDictionary(dict1,dict2):
+    return {**dict1, **dict2}
+print(mergeDictionary(dict1,dict2))
+
+# Для Python после 3.9
+def mergeDictionary(dict1,dict2):
+    return dict1 | dict2
+print(mergeDictionary(dict1,dict2))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+
+
+
+
+
+
+
+
+
 
