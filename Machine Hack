@@ -246,4 +246,57 @@ def Difference(A,S):
 print(Difference(A,S))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+49. Sum of square and square root
+
+def sumOfSqSqroot(N):
+    sum_of_squares_and_roots = N**2 + N**0.5
+    return sum_of_squares_and_roots
+print(sumOfSqSqroot(N))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+50. All divisors of an integer
+
+def divisors(N):
+    divisors = [1, N]
+    for i in range(2, N//2 + 1):
+        if N % i == 0:
+            divisors.append(i)
+    return sorted(divisors)
+print(divisors(N))
+---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
