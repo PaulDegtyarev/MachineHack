@@ -167,10 +167,83 @@ def dictionaryItems(dict1):
 print(dictionaryItems(dict1))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+26. Elements at odd index positions
 
+def oddIndexElements(list1):
+    list = []
+    for i in range(len(list1)):
+        if i % 2 != 0:
+            list.append(list1[i])
+    return list
+print(oddIndexElements(list1))
+---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+27. List of data types
 
+def dataType(list1):
+    type_list = []
+    for i in list1:
+        type_list.append(type(i))
+    return type_list
+print(dataType(list1))
+---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+42. Perimeter, semi-perimeter, and area of the triangle
 
+def triangle(x,y,z):
+    measures = []
+    P = x + y + z
+    p = 0.5 * P
+    S = (p * (p - x) * (p - y) * (p - z)) ** 0.5
+    measures.append(S)
+    measures.append(P)
+    measures.append(p)
+    return measures
+print(triangle(x,y,z))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+43. Compound interest
+
+def compoundInterest(P, R, T):
+    S1 = P * (1 + R/100) ** T
+    S = S1 - P
+    return S
+print(compoundInterest(P, R, T))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+44. Difference between the area and circumference of a circle
+
+pi = 3.14
+def diffAreaCirumference(R): 
+    S = pi * R ** 2 
+    C = 2 * pi * R 
+    difference = S - C 
+    return difference 
+print(diffAreaCirumference(R))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+47. Profit and loss
+
+def Difference(A,S):
+    difference = S - A
+    if difference < 0:
+        result = f'Loss {A - S}'
+    else:
+        result = f'Profit {S - A}'
+    return result
+print(Difference(A,S))
+---------------------------------------------------------------
 
 
