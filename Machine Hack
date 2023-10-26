@@ -269,34 +269,178 @@ def divisors(N):
 print(divisors(N))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+56. Speed of the car
+
+def speed(K,T):
+    if K / T >= 100:
+        return 'Drive Slow'
+    elif K / T < 100:
+        return 'Good Drive'
+print(speed(K,T))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+57. Validity of a triangle
+
+def trianglevalid(A1,A2,A3):
+    if A1 + A2 + A3 == 180:
+        return 'Yes'
+    else:
+        return 'No'
+print(trianglevalid(A1,A2,A3))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+58. Volume, surface area, and lateral surface area of a cylinder
+
+pi = 3.14
+def cylinder(R, H):
+    result = []
+    V = pi * R ** 2 * H
+    S_surf_area = (2 * (pi * R ** 2)) + (2 * pi * R * H)
+    result.append(S_surf_area)
+    result.append(V)
+    S_lat_surf_area = 2 * pi * R * H
+    result.append(S_lat_surf_area)
+    return result
+print(cylinder(R,H))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+60. Bag of words greater than a given length
+
+def removeWords(string1,L):
+    string = string1.split()
+    result = ''
+    for i in string:
+        if len(i) > L:
+            result += i + ' '
+    return result
+print(removeWords(string1,L))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+61. Number of spaces in the string
+
+def whiteSpaces(string1):
+    result = string1.count(' ')
+    return result
+print(whiteSpaces(string1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+62. Palindrome string
+
+def palindrome(string1):
+    if string1 != string1[::-1]:
+        return 'NO'
+    else:
+        return 'YES'
+print(palindrome(string1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+64. Capitalize the first character of all the elements in a string
+
+def capitalizeString(string1):
+    return string1.title()
+print(capitalizeString(string1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+66. Sort words in a string
+
+def rearrangeString(string1):
+    s = string1.strip().split(" ")
+    for i in range(len(s)):
+        s[i] = s[i].lower()
+    result = sorted(s)
+    print(' '.join(result))
+rearrangeString(string1)
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+70. Check if the string is a number
+
+def isnumeric(string1):
+    try:
+        float(string1)
+    except ValueError:
+        return 'NO'
+    else:
+        return 'YES'
+print(isnumeric(string1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+74. Largest element in an array
+
+def maximum_element(array):
+    array = sorted(array)
+    return array[-1]
+print(maximum_element(array1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+75. Difference between the sum of odd and even numbers in an array
+
+def difference(R1,R2):
+    even = []
+    odd = []
+    for i in range(R1, R2):
+        if i % 2 == 0:
+            even.append(i)
+        else:
+            odd.append(i)
+    return sum(odd) - sum(even)
+
+print(difference(R1,R2))
+
+OR
+
+def difference(R1,R2):
+    odd = 0
+    even = 0
+    for i in range(R1, R2):
+        if i % 2 == 0:
+            even += i
+        else:
+            odd += i
+    dif = abs(odd-even)
+    return dif
+print(difference(R1,R2))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+78. Replacing the minimum element of an array with mean
+
+def sorting_and_replacing(array):
+    array = sorted(array)
+    average = sum(array) / len(array)
+    array[0]=average
+    return array
+print(sorting_and_replacing(array1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+80. Frequency of a particular number in an array
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---------------------------------------------------------------
 
 
 
