@@ -439,7 +439,93 @@ print(sorting_and_replacing(array1))
 Beginner
 80. Frequency of a particular number in an array
 
+def frequency(array,index):
+    count = 0
+    variable = array[index]
+    for i in range(len(array)):
+        if array[i] == variable:
+            count += 1
+    return count
 
+print(frequency(array1,index))
+
+OR
+
+def frequency(array,index):
+    from collections import Counter
+    return Counter(array)[array[index]]
+
+print(frequency(array1,index))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+84. Remove an item from the dictionary
+
+This solution uses slightly less memory
+
+def removingElements(dict1,K):
+    keys = []
+    for key, value in dict1.items():
+        if value == K:
+            keys.append(key)
+    for key in keys:
+        dict1.pop(key)
+    return dict1
+print(removingElements(dict1,K))
+
+OR
+
+This solution is a little faster
+
+def removingElements(dict1,K):
+    for key, value in dict1.items():
+        if value == K:
+            del_key = str(key)
+            dict1.pop(del_key)
+            break
+    return dict1
+print(removingElements(dict1,K))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+85. Combine dictionaries by adding values of common keys
+
+def addingCommonKeys(dict1,dict2):
+    for key1, value1 in dict1.items():
+        for key2, value2 in dict2.items():
+            if key1 == key2:
+                dict1[key1] = value1 + value2
+    return dict1
+print(addingCommonKeys(dict1,dict2))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+87. Sum of dictionary items
+
+def dictSum(dict1):
+    return sum(dict1.values())
+print(dictSum(dict1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+88. Second maximum value in a dictionary
+
+def secondMax(dict1):
+    return (sorted(dict1.values())[-2])
+print(secondMax(dict1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+89. Swap keys and values in a dictionary
+
+def swapKeys(dict1):
+    return dict(zip(dict1.values(),dict1.keys()))
+print(swapKeys(dict1))
 ---------------------------------------------------------------
 
 
