@@ -559,5 +559,32 @@ def matrix_multiplication(matrix1,matrix2):
 print(matrix_multiplication(A,B))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner 
+96. Maximum value in the Nth column in the matrix
 
+def max_value(matrix,N):
+    return max(matrix[N] for matrix in matrix)
+print(max_value(A,N))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+98. Row with the minimum sum in a matrix
+
+def row_with_min_sum(matrix):
+    sums_and_rows = []
+    for row in matrix:
+        sums_and_rows.append(sum(row))
+    for row in matrix:
+        if sum(row) == min(sums_and_rows):
+            return row
+print(row_with_min_sum(A))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+99. Remove the last element from each row in the matrix
+
+---------------------------------------------------------------
 
