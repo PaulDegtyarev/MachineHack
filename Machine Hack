@@ -586,5 +586,45 @@ print(row_with_min_sum(A))
 Beginner
 99. Remove the last element from each row in the matrix
 
+def without_last_element(A):
+    rows = len(A) 
+    columns = len(A)
+    result = [[0 for row in range(rows-1)] for column in range(columns)]
+    for row in range(rows): 
+        for column in range(columns-1): 
+             result[row][column] = A[row][column] 
+        result[row][column] = A[row][column] 
+    return result
+print(without_last_element(A))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+104. Loop through a tuple
+
+def cycle(tuple1):
+    for i in range(len(tuple1)):
+        print(tuple1[i])
+cycle(tuple1)
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+105. Loop through a tuple using the while loop
+
+def iterating_over_values(tuple1):
+    count = 0
+    while count < len(tuple1):
+        print(tuple1[count])
+        count += 1
+iterating_over_values(tuple1)
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+106. Join multiple tuples
+
+def add(tuple1,tuple2,tuple3):
+    return tuple1 + tuple2 + tuple3
+print(add(tuple1,tuple2,tuple3))
+---------------------------------------------------------------
