@@ -628,3 +628,16 @@ def add(tuple1,tuple2,tuple3):
     return tuple1 + tuple2 + tuple3
 print(add(tuple1,tuple2,tuple3))
 ---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+107. Update a tuple
+
+def updation_of_tuple(tuple1,X,Y):
+    tuple1 = tuple(list(tuple1) + [X])
+    list_tuple1 = list(tuple1)
+    list_tuple1[0] = Y
+    tuple1 = tuple(list_tuple1)
+    return tuple1
+print(updation_of_tuple(tuple1,X,Y))
+---------------------------------------------------------------
