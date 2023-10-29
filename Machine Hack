@@ -641,3 +641,44 @@ def updation_of_tuple(tuple1,X,Y):
     return tuple1
 print(updation_of_tuple(tuple1,X,Y))
 ---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+108. Tuple of strings to a single-string
+
+def conversion_tuple_to_string(tuple1):
+    return ''.join([i for i in tuple1])
+
+print(conversion_tuple_to_string(tuple1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+113. Element with maximum value in a list of tuples
+
+def index_with_maxvalue(list1):
+    list1 = list(list1)
+    rows = len(list(list1))
+    columns = len(list(list1))
+    list_res = []
+    for row in range(rows):
+        for column in range(columns-1):
+            list_res.append(list1[row][column])
+    mx = 0
+    for i in range(1, len(list_res), 2):
+        mx = max(mx, list_res[i])
+    for j in range(len(list_res)):
+        if list_res[j] == mx:
+            return (list_res[j-1])
+print(index_with_maxvalue(list1))
+
+OR
+
+def index_with_maxvalue(list1):
+ return sorted(list1,key=lambda x:x[1],reverse=True)[0][0]
+print(index_with_maxvalue(list1))
+---------------------------------------------------------------
+
+
+
+
