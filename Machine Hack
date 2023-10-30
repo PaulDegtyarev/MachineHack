@@ -679,6 +679,20 @@ def index_with_maxvalue(list1):
 print(index_with_maxvalue(list1))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Beginner
+118. Identical items in a set
 
+def identical_elements(set1,set2):
+    return (set1.intersection(set2))
+print(identical_elements(set1,set2))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+119. Update a set
+
+
+---------------------------------------------------------------
 
 
