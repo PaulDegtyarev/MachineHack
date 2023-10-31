@@ -701,6 +701,27 @@ print(unique_elements(set1,set2))
 
 ---------------------------------------------------------------
 Beginner
+120. Remove items from the set
+
+def update_set(set1,set2):
+    set_union = set1 | set2
+    set_union.intersection_update(set1, set2)
+    return set_union
+print(update_set(set1,set2))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+121. Difference between the maximum and minimum elements in a set
+
+def difference_max_min(set1):
+    return max(set1) - min(set1)
+print(difference_max_min(set1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+132. Determinant of a 2x2 matrix
 
 
-
+---------------------------------------------------------------
