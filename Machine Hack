@@ -723,5 +723,54 @@ print(difference_max_min(set1))
 Beginner
 132. Determinant of a 2x2 matrix
 
+import numpy as np
+from scipy import linalg
+print(np.linalg.det(A))
+---------------------------------------------------------------
 
+---------------------------------------------------------------
+133. Determinant of a 3x3 matrix
+Beginner
+
+
+import numpy as np
+from scipy import linalg
+print(np.linalg.det(A))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+137. Area of the circle
+
+import scipy
+from scipy.constants import pi
+
+def circular_area(N):
+    return (N**2/4)*pi
+print(circular_area(N))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+138. Cubic root
+
+import scipy
+from scipy.special import cbrt
+def root(list1):
+    multiplication = 1
+    for i in list1:
+        if i % 2 == 0:
+            multiplication *= i
+    return cbrt(multiplication)
+print(root(list1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Beginner
+140. Reverse a NumPy array
+
+import numpy as np
+def reverse_list(list1):
+    return np.array(list1)[::-1]
+print(reverse_list(list1))
 ---------------------------------------------------------------
