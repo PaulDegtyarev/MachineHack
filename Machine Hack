@@ -822,3 +822,16 @@ rotator = Rotation()
 rotated_matrix = rotator.rotate_matrix(A)
 print("Matrix after rotation:", rotated_matrix)
 ---------------------------------------------------------------
+
+---------------------------------------------------------------
+Computer Vision
+915. Minima of a function using Gradient Descent
+
+
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Coumputer Vision
+911. Accuracy of a Random Forest Classifier
+
+---------------------------------------------------------------
