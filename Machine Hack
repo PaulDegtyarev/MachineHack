@@ -774,3 +774,51 @@ def reverse_list(list1):
     return np.array(list1)[::-1]
 print(reverse_list(list1))
 ---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+Computer Vision
+912. ROC-AUC Score
+
+from sklearn.metrics import roc_auc_score
+def ROC_AUC_Score(y_true, y_pred):
+    score = roc_auc_score(y_true, y_pred)
+    if score > 0.7:
+        return "Acceptable"
+    else:
+        return "Not Acceptable"
+print(ROC_AUC_Score(y_true, y_pred))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Computer Vision
+914. Rotate a matrix of pixels
+
+class Rotation(object):
+   def rotate_matrix(self, A):
+       print("Matrix before rotation:", A)
+       n = len(A)
+       new_matrix = [[0] * n for _ in range(n)]
+       for i in range(n):
+           for j in range(n):
+               new_matrix[j][n - 1 - i] = A[i][j]
+       return new_matrix
+
+rotator = Rotation()
+rotated_matrix = rotator.rotate_matrix(A)
+print("Matrix after rotation:", rotated_matrix)
+---------------------------------------------------------------
