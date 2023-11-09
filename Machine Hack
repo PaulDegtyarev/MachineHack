@@ -844,6 +844,23 @@ Computer Vision
 915. Minima of a function using Gradient Descent
 
 
+from numpy.random import rand
+import numpy as np
+
+def objective(x):
+    return x**2
+
+def derivative(x):
+    return 2*x
+
+def gradient_descent(x, iter, lrate):
+    for i in range(iter):
+        grad = derivative(x)
+        x = x - lrate * grad
+    return x, round(objective(x), 6)
+
+min_x1, min_val1 = gradient_descent(x, iter, lrate)
+print(f"Minimum value for function is: f({min_x1}) = {min_val1}")
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
