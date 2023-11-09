@@ -806,6 +806,22 @@ print(ROC_AUC_Score(y_true, y_pred))
 
 ---------------------------------------------------------------
 Computer Vision
+913. Update the last column of a matrix
+
+def column_replace(A, B):
+    print("Matrix A Before =", A)
+    print("Matrix B Before =", B)
+
+    for i in range(len(A)):
+        B[i][-1] = A[i][-1]
+
+    print("Matrix A After =", A)
+    print("Matrix B After =", B)
+column_replace(A, B)
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Computer Vision
 914. Rotate a matrix of pixels
 
 class Rotation(object):
@@ -833,5 +849,6 @@ Computer Vision
 ---------------------------------------------------------------
 Coumputer Vision
 911. Accuracy of a Random Forest Classifier
+
 
 ---------------------------------------------------------------
