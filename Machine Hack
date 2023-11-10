@@ -818,6 +818,14 @@ def column_replace(A, B):
     print("Matrix A After =", A)
     print("Matrix B After =", B)
 column_replace(A, B)
+
+OR
+
+def column_replace(A, B):
+    print(f"Matrix A Before = {A}\nMatrix B Before = {B}")
+    for i in range(len(A)): B[i][-1] = A[i][-1]
+    print(f"Matrix A After = {A}\nMatrix B After = {B}")
+column_replace(A, B)
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
@@ -866,6 +874,13 @@ print(f"Minimum value for function is: f({min_x1}) = {min_val1}")
 ---------------------------------------------------------------
 Coumputer Vision
 911. Accuracy of a Random Forest Classifier
+
+
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced ML
+918. New Column of a Matrix
 
 
 ---------------------------------------------------------------
