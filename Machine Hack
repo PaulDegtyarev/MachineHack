@@ -193,6 +193,25 @@ print(dataType(list1))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Advanced
+33. Sort the values of the first list using the values of the second list
+
+def sorting_list(list1,list2):
+   d ={}
+   i=0
+   for element in list1 :
+       d[element]=list2[i]
+       i+=1
+   list0=sorted(d.items(),key=lambda x :x[1])
+   new_list=[]
+   for j in list0:
+       new_list.append(j[0])
+   return new_list
+
+print(sorting_list(list1,list2))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Beginner
 42. Perimeter, semi-perimeter, and area of the triangle
 
