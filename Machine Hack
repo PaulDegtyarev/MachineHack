@@ -46,13 +46,13 @@ Advanced
 
 def ArmstrongNumber(N):
     start = N
-    result = 0
+    armstrong_number = 0
     n = len(str(N))
     while N!= 0:
         digit = N % 10
-        result += digit ** n
+        armstrong_number += digit ** n
         N //= 10
-    return "Yes" if result == start else "No"
+    return "Yes" if armstrong_number == start else "No"
 
 print(ArmstrongNumber(N))
 ---------------------------------------------------------------
@@ -211,6 +211,16 @@ print(dataType(list1))
 
 ---------------------------------------------------------------
 Advanced
+31. Split a list into evenly sized buckets 
+
+def grouping_buckets(list1,B):
+    return [list1[i:i+B] for i in range(0, len(list1), B)]
+
+print(grouping_buckets(list1,B))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
 33. Sort the values of the first list using the values of the second list
 
 def sorting_list(list1,list2):
@@ -226,6 +236,25 @@ def sorting_list(list1,list2):
    return new_list
 
 print(sorting_list(list1,list2))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+34. Maximum sum of elements of a list in a list of lists
+
+def maximum_sum(list1): 
+    return max(sum(row) for row in list1) 
+print(maximum_sum(list1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+35. List of elements greater than average 
+
+def elements_greaterThan_average(list1): 
+    average = sum(list1)/len(list1) 
+    return [x for x in list1 if x > average] 
+print(elements_greaterThan_average(input_list))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
