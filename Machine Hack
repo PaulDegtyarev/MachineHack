@@ -41,6 +41,23 @@ print(positiveNumber(K,N))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Advanced
+9. Armstrong number
+
+def ArmstrongNumber(N):
+    start = N
+    result = 0
+    n = len(str(N))
+    while N!= 0:
+        digit = N % 10
+        result += digit ** n
+        N //= 10
+    return "Yes" if result == start else "No"
+
+print(ArmstrongNumber(N))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Beginner
 10. Simple interest
 
