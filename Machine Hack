@@ -258,6 +258,51 @@ print(elements_greaterThan_average(input_list))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Advanced
+37. Unique pairs of elements from two lists
+
+def combination(list1,list2):
+    from itertools import product
+    x=list(product(list1,list2))
+    return [[i[0],i[1]]for i in x]
+print(combination(list1,list2))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+38. Buffer to multiple list elements
+
+def adding_buffer(list1,B):
+    return [i+B if i<=(sum(list1)/len(list1)) else i for i in list1]
+
+print(adding_buffer(list1,B))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+39. Remove a specific digit from every element of the list
+
+def RemoveElement(list1,N):
+    return [int(str(item).replace(str(N), '')) for item in list1]
+print(RemoveElement(list1,N))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+40. Remove palindromic elements from the list
+
+def is_polindrom(list1):
+    list1 = list(map(str, list1))
+    result = []
+    for i in list1:
+        if i[::-1] not in list1:
+            result.append(int(i))
+    return result
+
+print(is_polindrom(list1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Beginner
 42. Perimeter, semi-perimeter, and area of the triangle
 
@@ -298,6 +343,18 @@ print(diffAreaCirumference(R))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Advanced
+45. Fibonacci number
+
+def fibonacciNumber(N):
+    def isPerfectSquare(x):
+        s = int((x) ** 0.5)
+        return s * s == x
+    return isPerfectSquare(5*N*N + 4) or isPerfectSquare(5*N*N - 4)
+print(fibonacciNumber(N))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Beginner
 47. Profit and loss
 
@@ -332,6 +389,29 @@ def divisors(N):
             divisors.append(i)
     return sorted(divisors)
 print(divisors(N))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+54. Validity of a password
+
+def passwordValidity(N):
+    if len(N) < 8:
+        return "Password Not Valid"
+    if not any(char.islower() for char in N):
+        return "Password Not Valid"
+
+    if not any(char.isupper() for char in N):
+        return "Password Not Valid"
+
+    if not any(char.isdigit() for char in N):
+        return "Password Not Valid"
+
+    if not any(char in ['_', '@', '$'] for char in N):
+        return "Password Not Valid"
+
+    return "Password Valid"
+print(passwordValidity(N))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
