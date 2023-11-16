@@ -514,6 +514,36 @@ rearrangeString(string1)
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Advanced
+69. All the permutations of the string
+
+string = string1 + string2
+
+def get_permutation(string, i=0):
+
+    # Если длина строки больше 3, выводим ошибку
+    if len(string) > 3:
+        print("error")
+
+    # Если мы достигли конца строки, выводим ее
+    elif i == len(string):
+        print("".join(string))
+
+    else:
+        # Проходимся по каждому символу
+        for j in range(i, len(string)):
+
+            # Меняем местами символы
+            words = list(string)
+            words[i], words[j] = words[j], words[i]
+
+            # Рекурсивно вызываем функцию для следующего символа
+            get_permutation("".join(words), i + 1)
+
+print(get_permutation(string))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Beginner
 70. Check if the string is a number
 
@@ -525,6 +555,38 @@ def isnumeric(string1):
     else:
         return 'YES'
 print(isnumeric(string1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+72. Alphabets, numbers, and special symbols from a string
+
+def SplittingAlphanumeric(string1):
+    letters = "".join(char for char in string1 if char.isalpha())
+    digits = "".join(char for char in string1 if char.isdigit())
+    special_chars = "".join(char for char in string1 if not (char.isalpha() or char.isdigit()))
+    return [letters, digits, special_chars]
+
+
+print(SplittingAlphanumeric(string1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+73. Initials of a name
+
+def initial_name(string1):
+
+    # Разделение входной строки на список слов.
+    name_parts = string1.split()
+
+    # Проходит по всем элементам списка name_parts, кроме последнего и берет первую букву элемента и добавляет к нему точку и добавляет в список. Т.е. делает инициалы имени и отчества.
+    initials = [name[0] + '.' for name in name_parts[:-1]]
+
+    # Добавляет последнее слово, т.е. фамилию.
+    initials.append(name_parts[-1])
+    return ''.join(initials).title()
+print(initial_name(string1))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
@@ -569,6 +631,15 @@ print(difference(R1,R2))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Advanced
+77. Move all zeros to the end of the array
+
+def move_zeros_to_end(array): 
+    return [i for i in array if i != 0] + [i for i in array if i == 0]
+print(move_zeros_to_end(array1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Beginner
 78. Replacing the minimum element of an array with mean
 
@@ -578,6 +649,15 @@ def sorting_and_replacing(array):
     array[0]=average
     return array
 print(sorting_and_replacing(array1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+79. Reminder after converting an array into a single integer 
+
+def remainder(array,divisor): 
+    return int("".join(map(str, array))) % divisor 
+print(remainder(array1,N))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
@@ -702,6 +782,16 @@ def matrix_multiplication(matrix1,matrix2):
                 result[s][j] += A[s][k] * B[k][j]
     return result
 print(matrix_multiplication(A,B))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+94. Reverse every N-th row in a matrix 
+
+def row_reversion(matrix,N):
+    matrix[N-1] = matrix[N-1][::-1]
+    return matrix
+print(row_reversion(A,N))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
