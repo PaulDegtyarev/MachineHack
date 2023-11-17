@@ -795,6 +795,20 @@ print(row_reversion(A,N))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Advanced
+95. Group elements in the matrix
+
+def grouping_column_elements(matrix):
+    result_dict = {}
+    for pair in matrix:
+        if pair[0] not in result_dict:
+            result_dict[pair[0]] = []
+        result_dict[pair[0]].append(pair[1])
+    return result_dict
+print(grouping_column_elements(A))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Beginner 
 96. Maximum value in the Nth column in the matrix
 
