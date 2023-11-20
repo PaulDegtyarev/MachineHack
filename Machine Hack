@@ -1059,6 +1059,17 @@ print(ConfidenceInterval_Lower(data1))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Intermediate
+282. Dataframe with a 2D list
+
+import pandas as pd
+def list_to_dataframe(list1):
+    df = pd.DataFrame(list1, columns=["x", "y"])
+    return df
+print(list_to_dataframe(list1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Advanced
 446. Multiply a string number
 
