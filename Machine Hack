@@ -848,6 +848,17 @@ print(without_last_element(A))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Advanced
+100. Row-wise addition in tuple matrix
+
+def row_wise_addtion(A,B):
+    # i - индекс строки, j - индекс элемента,
+   return [[A[i][j]+(B[i],) for j in range(len(A[i]))] for i in range(len(A))]
+
+print(row_wise_addtion(A,B))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Beginner
 104. Loop through a tuple
 
@@ -1047,6 +1058,18 @@ def ConfidenceInterval_Lower(data1):
 print(ConfidenceInterval_Lower(data1))
 ---------------------------------------------------------------
 
+---------------------------------------------------------------
+Advanced
+446. Multiply a string number
+
+class Solution:
+  def multiplyby11(self, number):
+        # Преобразуем строку в число, умножаем на 11 и возвращаем результат в виде строки
+        return str(int(number) * 11)
+
+result = Solution().multiplyby11(number)
+print(result)
+---------------------------------------------------------------
 
 
 
