@@ -1070,6 +1070,22 @@ print(list_to_dataframe(list1))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+Beginner
+299. Column names in a dataframe
+
+import pandas as pd
+def column_names(dict1):
+    # Создаем DataFrame из словаря
+    df = pd.DataFrame(dict1)
+
+    # Получаем имена всех столбцов DataFrame
+    column_names = df.columns.tolist()
+
+    return column_names
+print(column_names(dict1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Advanced
 446. Multiply a string number
 
