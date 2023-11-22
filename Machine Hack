@@ -41,6 +41,28 @@ print(positiveNumber(K,N))
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
+intermediate
+7. All prime numbers within a range
+
+def is_prime(number):
+    if number <= 1:
+        return False
+    elif number <= 3:
+        return True
+    elif number % 2 == 0 or number % 3 == 0:
+        return False
+    i = 5
+    while i * i <= number:
+        if number % i == 0 or number % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+def primeNumbers(K, N):
+    return [number for number in range(K, N+1) if is_prime(number)]
+print(primeNumbers(K,N))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
 Advanced
 9. Armstrong number
 
@@ -1083,6 +1105,45 @@ def column_names(dict1):
 
     return column_names
 print(column_names(dict1))
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Advanced
+443. Valid expression
+
+class Solution:
+    def valid(self, s):
+        stack = []
+
+        for char in s:
+            if char in ['[', '{', '(']:
+                stack.append(char)
+
+            elif char in [']', '}', ')']:
+
+                # Если стек пустой, значит есть закрывающая скобка без открывающей
+                if len(stack) == 0:
+                    return 0
+
+                if char == ']' and stack[-1] == '[':
+                    stack.pop()
+
+                elif char == '}' and stack[-1] == '{':
+                    stack.pop()
+
+                elif char == ')' and stack[-1] == '(':
+                    stack.pop()
+
+                # Если закрывающая скобка не соответствует последней открывающей, значит строка некорректна
+                else:
+                    return 0
+
+        if len(stack) == 0:  # Если стек пустой, значит все скобки были закрыты
+            return 1
+        else:  # Если стек не пустой, значит есть открывающая скобка без закрывающей
+            return 0
+result = Solution().valid(s)
+print(result)
 ---------------------------------------------------------------
 
 ---------------------------------------------------------------
